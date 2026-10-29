@@ -411,6 +411,7 @@ src/title_ov006/title_resources.c
 src/title_ov006/title_scene_destroy.c
 src/title_ov006/frontend_scene_irq.c
 src/title_ov006/credits_motion.c
+src/title_ov006/credits_motion_step.c
 src/title_ov006/credits_resources.c
 src/title_ov006/credits_scene_lifecycle.c
 src/title_ov006/credits_irq_init.c
