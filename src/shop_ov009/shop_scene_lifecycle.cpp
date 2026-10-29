@@ -9,6 +9,8 @@
 
 #include "shop_scene_internal.h"
 
+extern u8 data_ov009_0207ea44;
+
 extern "C" {
 GameIrqTask *ShopSceneIrq_Init(GameIrqTask *task, u32 priority, u32 unused, void *parent)
 {
@@ -204,7 +206,7 @@ ShopSceneTask *ShopScene_Init(ShopSceneTask *task, u32 priority, u32 unused)
     }
     object = GameHeap_New(2096, 0, 0, 0);
     if (object)
-        object = func_ov009_02074b80(object, data_ov009_0207ea3c.font_slots);
+        object = func_ov009_02074b80(object, &data_ov009_0207ea44);
     data_ov009_0207ea30 = object;
     object = GameHeap_New(936, 0, 0, 0);
     if (object)

@@ -7,10 +7,11 @@
 #include <game/shop_panels.h>
 #include <game/shop_graphics.h>
 extern u8 data_ov009_0207ea3c[];
+extern u8 data_ov009_0207ea44;
 extern ShopText *data_ov009_0207ea30;
 void func_0203b7a0(u32 value, void *destination, u32 size);
 void func_0203b7b4(const void *source, void *destination, u32 size);
-#define FONTS ((const u32 *const *)(data_ov009_0207ea3c + 8))
+#define FONTS ((const u32 *const *)(&data_ov009_0207ea44))
 #define PIXELS (*(u8 **)(data_ov009_0207ea3c + 0x70))
 
 void ShopSubscreenText_Init(void)
